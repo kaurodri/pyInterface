@@ -1,12 +1,7 @@
-import tkinter as tk
-
-class Interface:
-    def __init__(self, janela):
-        self.janela = janela
-        self.janela.title("Interface")
-        self.janela.geometry("500x500")
+from interface import *
 
 if __name__ == "__main__":
     root = tk.Tk()
-    interface = Interface(root)
+    nome = "inter"
+    interface = Interface(root, nome)
     root.mainloop()
